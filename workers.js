@@ -382,7 +382,7 @@ export default {
                 }
             }
 
-            const targetReverseProxy = env.REVERSE_PROXY_TARGET || "arumazeta.github.io";
+            const targetReverseProxy = env.REVERSE_PROXY_TARGET || "youtube.com";
             return await reverseProxy(request, targetReverseProxy);
         } catch (err) {
             return new Response(`An error occurred: ${err.toString()}`, {
